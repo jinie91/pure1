@@ -7,7 +7,7 @@ color: #333;}
 #wrap {
   width: 100%;
   height: 100vh;
-  min-width: 320px;
+  min-width: 420px;
   max-width: 460px;
   /* overflow: hidden; */
   margin: 0 auto;
@@ -15,12 +15,12 @@ color: #333;}
 }
 .top {
   width: 100%;
-  padding: 30px 0 25px 0;
+  padding: 30px 0 15px 0;
   box-sizing: border-box;
   /* background-image: url(../img/sense.jpg); */
 }
 .top .top_icon {
-  width: calc(100% - 20px);
+  /* width: calc(100% - 20px); */
   margin: 0 auto;
   display: flex;
   justify-content: center;
@@ -41,11 +41,11 @@ color: #333;}
 }
 .center .top_slide {
   width: 100%;
-  padding-top: 15px;
+  padding-top: 10px;
   display: none;
 }
 .center .top_slide ul {
-  width: calc(100% - 30px);
+  width: calc(100% - 20px);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -83,7 +83,7 @@ color: #333;}
   border: 1px solid #333;
   border-radius: 5px;
   padding: 2px;
-  block-size: border-box;
+  box-sizing: border-box;
 }
 .center .top_slide .slide2 li a:hover {
   background-color: #333;
@@ -98,6 +98,9 @@ color: #333;}
   text-align: center;
   font-size: 14px;
   border-right: 1px solid #333;
+}
+.center .top_slide .slide3 li:first-child {
+  width: 120%;  
 }
 .center .top_slide .slide3 li:last-child {
   border-right: 0;
@@ -265,7 +268,7 @@ color: #333;}
   border-radius: 50%;
   border: 3px solid #333;
 }
-.bottom_bottom .circle_btn .btn_in:hover {
+/* .bottom_bottom .circle_btn .btn_in:hover {
   background-color: #333;
   transition: .5s;
-}
+} */
