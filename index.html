@@ -13,7 +13,6 @@
 <body>
 
   <div id="wrap">
-
     <div class="top">
       <ul class="top_icon">
         <li><a href="#">Pure</a></li>
@@ -58,10 +57,9 @@
             <div class="dust-in">
               <div class="icon"><i class="far fa-smile"></i></div>
               <div class="icon_text">
-                <p>양호</p>
+                <p>보통</p>
                 <p>22㎍/m³</p>  
               </div>
-
             </div>
           </li>
           <li class="last-btn">
@@ -72,7 +70,6 @@
       </div>
     </div>  
 
-
     <div class="bottom_top">
       <div class="top_btn">
         <div class="top_left on">
@@ -82,21 +79,19 @@
           <a href="#">동영상</a>
         </div>
       </div>
-    </div>
-      
-      
-     
-    <!-- <div class="bottom_bottom">
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-      <li><div class="circle_btn">
-        <div class="btn_in">
-
-        </div>
-      </div></li>
-      <li><a href=""></a></li>
-      <li><a href=""></a></li>
-    </div> -->
+    </div> 
+    <div class="bottom_bottom">
+      <li><a href="#"><i class="far fa-image"></i></a>사진</li>
+      <li><a href="#"><i class="far fa-grin-stars"></i></a>데코</li>     
+      <li>
+        <div class="circle_btn">
+          <div class="btn_in">
+           
+          </div>
+      </div>
+    </li>
+      <li><a href="#"><i class="fas fa-magic"></i></a>효과</li>
+      <li><a href="#"><i class="fas fa-filter"></i></a>필터</li>    </div>
 
       
       
@@ -155,14 +150,21 @@ $('.center').on('click', function(e){
         var i = $(this).index();
         $('.center .top_slide').css({display: 'none'})
 })
-
 $('.bottom_top .top_btn div').on('click', function(e){
     e.preventDefault();
     $(this).addClass('on').siblings().removeClass('on');
 })
+$('.circle_btn').click(function(){
+        $('.center').css({
+          backgroundImage: 'url(../img/sense.jpg)',
+          backgroundSize: '100% 100%',
+          backgroundPosition: 'center'
+        })
+      })
 
-
-
+// $('.circle_btn').click(function(){
+//   $(this).parent().siblings().find('center').attr('src', '/01_gr.imgpng');
+// })
 
 
 
