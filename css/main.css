@@ -9,7 +9,7 @@ color: #333;}
   height: 100vh;
   min-width: 320px;
   max-width: 460px;
-  /* overflow: hidden; */
+  overflow: hidden;
   margin: 0 auto;
   background-color: #fff;
 }
@@ -55,7 +55,7 @@ color: #333;}
   border-radius: 5px;
 }
 .center .top_slide .slide1 {
-  height: 70px;
+  height: 85px;
   background-color: #fff;
   
 }
@@ -93,7 +93,7 @@ color: #333;}
   color: #fff;
 }
 .center .top_slide .slide3 {
-  height: 90px;
+  height: 88px;
   background-color: #fff;
 }
 .center .top_slide .slide3 li {
