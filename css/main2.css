@@ -85,11 +85,12 @@ color: #333;}
   margin: 0 auto; 
 }
 
-.bottom_bottom ul {
-  width: 100%;
+.bottom_bottom>ul {
+  width: calc(100% - 40px);
   height: 90%;
   display: flex;
   /* background-color: red; */
+  margin: 0 auto;
 }
 .bottom_bottom ul li {
   width: 30%;
@@ -119,7 +120,7 @@ color: #333;}
 
 .bottom_icon {
   display: flex;
-  margin: 15px auto;
+  margin: 20px auto;
   justify-content: center;
   align-items: center;
 }
