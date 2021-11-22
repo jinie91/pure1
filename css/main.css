@@ -199,13 +199,13 @@ color: #333;}
 
 }
 .center .typing-txt {
-  width: 60%;
+  width: 55%;
   position: absolute;
-  top: 40%;
+  top: 50%;
   left: 10%;
   transform: translateY(-50%);
   display: none;
-  font-size: 30px;
+  font-size: 28px;
   font-weight: bold;
 }
 
