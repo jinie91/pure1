@@ -68,7 +68,16 @@
           </li>
         </ul> 
       </div>
+      <div class="typing-txt">
+        <ul>
+          <li class>HELLO~!</li>
+          <li>I WANT TO BE</li>
+          <li>A MEMBER</li>
+          <li>OF AMUZ :)</li>
+        </ul>
+      </div>
     </div>  
+
 
     <div class="bottom_top">
       <div class="top_btn">
@@ -121,7 +130,9 @@
   </div>
 
   <script src="./js/jquery-3.6.0.min.js"></script>
-  <script>
+  <script src="js/jquery.typewriter.min.js"></script>
+    
+ <script>
 
 // $('.top_icon li').on('click', function(e){
 //         e.preventDefault();
@@ -156,19 +167,24 @@ $('.bottom_top .top_btn div').on('click', function(e){
 })
 $('.circle_btn').click(function(){
     $('.center').css({
-      backgroundImage: 'url(../img/amuz.jpg)',
+      backgroundColor: 'black',
       backgroundSize: '100% 100%',
       backgroundPosition: 'center'
+    });
+    $('.typing-txt').css({
+      display: 'block',
+      color: 'white'
     });
     $('.btn_in').css({
       backgroundColor: '#333',
       transition: '.5s'
     })
-
-
-
-  })
-
+  });
+  $('.typing-txt').typeWrite({
+    repeat:true,
+    interval: 1000,
+    cursor:false,
+});
 
 
 
