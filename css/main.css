@@ -1,0 +1,215 @@
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+li {list-style: none;}
+a {display: block; text-decoration: none;
+color: #333;}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  min-width: 320px;
+  max-width: 460px;
+  /* overflow: hidden; */
+  margin: 0 auto;
+  background-color: bisque;
+}
+.top {
+  width: 100%;
+  padding: 25px 0 10px 0;
+  box-sizing: border-box;
+}
+.top .top_icon {
+  width: calc(100% - 20px);
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.top .top_icon li {
+  width: 20%;
+  text-align: center;
+}
+.center {
+  width: 100%;
+  height: 60%;
+  background-color: #eee;
+}
+.center .top_slide {
+  width: 100%;
+  padding-top: 15px;
+  display: none;
+}
+.center .top_slide ul {
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.center .top_slide .slide1 {
+  height: 70px;
+  background-color: #fff;
+  
+}
+.center .top_slide .slide1 li {
+  width: 100%;
+  text-align: center;
+  line-height: 25px;
+  font-size: 14px;
+}
+.center .top_slide .slide2 {
+  height: 55px;
+  background-color: #fff;
+}
+.center .top_slide .slide2 li {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-weight: bold;
+}
+.center .top_slide .slide2 li a {
+  width: 50%;
+  border: 1px solid #333;
+  border-radius: 5px;
+  padding: 2px;
+}
+.center .top_slide .slide2 li a:hover {
+  background-color: #333;
+  color: #fff;
+}
+.center .top_slide .slide3 {
+  height: 90px;
+  background-color: #fff;
+}
+.center .top_slide .slide3 li {
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  border-right: 1px solid #333;
+}
+.center .top_slide .slide3 li:last-child {
+  border-right: 0;
+}
+.center .top_slide .slide3 .left_text p {
+  font-weight: bold;
+}
+.center .top_slide .slide3 .left_text p:last-child {
+  padding-top: 5px;
+}
+.center .top_slide .slide3 .dust>p {
+  font-weight: bold;
+}
+.center .top_slide .slide3 .dust-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
+}
+.center .top_slide .slide3 .dust-in .icon {
+  font-size: 22px;
+}
+.center .top_slide .slide3 .dust-in .icon_text {
+  font-size: 12px;
+  text-align: left;
+  padding-left: 10px;
+}
+.center .top_slide .slide3 li:last-child {
+  border-right: 0;
+}
+.center .top_slide .slide3 .last-btn {
+}
+.center .top_slide .slide3 .last-btn a {
+  width: 70%;
+  height: 20px;
+  /* background-color: #fff;   */
+  margin: 8px auto;
+  padding: 3px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border: 1px solid #333
+}
+.center .top_slide .slide3 .last-btn a:hover {
+  background-color: #333;
+  color:#fff;
+}
+.bottom_top {
+  position: relative;
+  width: 100%;
+  height: auto;
+}
+.bottom_top .top_btn {
+  margin-top: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  width: 105px;
+  height: 25px;
+  background-color: #eee;
+  border-radius: 30px;
+  overflow: hidden;
+  font-size: 12px;
+  line-height: 25px;
+}
+.bottom_top .top_btn div.on {
+  background-color: #fff;
+  font-weight: bold;
+}
+.bottom_top .top_left {
+  position: absolute;
+  width: 50px;
+  height: 100%;
+  left: 0;
+  border-radius: 30px;
+  /* background-color: #fff; */
+  text-align: center;
+}
+.bottom_top .top_right {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  right: 0;
+  border-radius: 30px;
+  /* background-color: #fff; */
+  text-align: center;
+
+}
+
+
+.bottom_bottom {
+  position: relative;
+  width: 100%;
+}
+.bottom_bottom .circle_btn {
+  position: absolute;
+  /* top: 20px; */
+  left: 50%;
+  transform: translate(-50%);
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fff;
+  border: 2px solid #333;
+}
+.circle_btn .btn_in {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-49%, -50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: fff;
+  border: 2px solid #333;
+  overflow: hidden;
+}
+.circle_btn .btn_in:hover {
+  background-color: #333;
+  transition: .5s;
+}
+

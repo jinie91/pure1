@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2ae203eb2b.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css"> 
+  <title>Document</title>
+</head>
+<body>
+
+  <div id="wrap">
+
+    <div class="top">
+      <ul class="top_icon">
+        <li><a href="#">Pure</a></li>
+        <li><a href="#"><i class="fas fa-caret-square-down"></i></a></li>
+        <li><a href="#"><i class="fas fa-file-image"></i></a></li>
+        <li><a href="#"><i class="fas fa-cloud-sun"></i></a></li>
+        <li><a href="#"><i class="fas fa-sync-alt"></i></a></li>
+      </ul>
+    </div>
+    <div class="center">
+      <div class="top_slide">
+        <ul class=" slide slide1">
+          <li><a href="#"><i class="fas fa-bolt"></i></a>플래시</li>
+          <li><a href="#"><i class="fas fa-th-large"></i></a>그리드</li>
+          <li><a href="#"><i class="fas fa-stopwatch"></i></a>타이머</li>
+          <li><a href="#"><i class="fas fa-hand-point-up"></i></a>터치촬영</li>
+          <li><a href="#"><i class="fas fa-cog"></i></a>설정</li>
+        </ul>
+        <ul class=" slide slide2">
+          <li><a href="#">1:1</a></li>
+          <li><a href="#">3:4</a></li>
+          <li><a href="#">9:16</a></li>
+          <li><a href="#">FULL</a></li>
+        </ul>
+        <ul class=" slide slide3">
+          <li class="left_text">
+            <p>부산광역시<br>사상구 모라로</p>
+            <p>2021. 11. 19</p>
+          </li>
+          <li class="dust dust_1">
+            <p>미세먼지</p>
+            <div class="dust-in">
+              <div class="icon"><i class="far fa-smile"></i></div>
+              <div class="icon_text">
+                <p>양호</p>
+                <p>37㎍/m³</p>  
+              </div>
+            </div>  
+          </li>
+          <li class="dust dust_1">
+            <p>초미세먼지</p>
+            <div class="dust-in">
+              <div class="icon"><i class="far fa-smile"></i></div>
+              <div class="icon_text">
+                <p>양호</p>
+                <p>22㎍/m³</p>  
+              </div>
+
+            </div>
+          </li>
+          <li class="last-btn">
+            <div><a href="#">일기예보</a></div>
+            <div><a href="#">필터적용</a></div>
+          </li>
+        </ul> 
+      </div>
+    </div>  
+
+
+    <div class="bottom_top">
+      <div class="top_btn">
+        <div class="top_left on">
+          <a href="#">사진</a>
+        </div>
+        <div class="top_right">
+          <a href="#">동영상</a>
+        </div>
+      </div>
+    </div>
+      
+      
+     
+    <!-- <div class="bottom_bottom">
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+      <li><div class="circle_btn">
+        <div class="btn_in">
+
+        </div>
+      </div></li>
+      <li><a href=""></a></li>
+      <li><a href=""></a></li>
+    </div> -->
+
+      
+      
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script>
+
+// $('.top_icon li').on('click', function(e){
+//         e.preventDefault();
+//         var i = $('.center .top_slide ul').index();
+//         $('.center .top_slide').eq(i).show().siblings().hide();
+
+
+//     })
+
+$('.top_icon li').on('click', function(e){
+        e.preventDefault();
+        var i = $(this).index();
+        $('.center .top_slide').css({display: 'block'})
+        $('.center .top_slide ul').eq(i-1).show().siblings().hide();
+})
+$('.top_icon li:first-child').on('click', function(e){
+        e.preventDefault();
+        $('.center .top_slide ul').hide();
+})
+$('.top_icon li:last-child').on('click', function(e){
+        e.preventDefault();
+        $('.center .top_slide ul').hide();
+})
+$('.center').on('click', function(e){
+        e.preventDefault();
+        var i = $(this).index();
+        $('.center .top_slide').css({display: 'none'})
+})
+
+$('.bottom_top .top_btn div').on('click', function(e){
+    e.preventDefault();
+    $(this).addClass('on').siblings().removeClass('on');
+})
+
+
+
+
+
+
+  </script>
+  
+</body>
+</html>
