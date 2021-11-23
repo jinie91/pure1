@@ -34,6 +34,10 @@ color: #333;}
   width: 20%;
   text-align: center;
 }
+.top .top_icon li:first-child {
+  padding-left: 18px;
+}
+
 .center {
   width: 100%;
   height: 65%;

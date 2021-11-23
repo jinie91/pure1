@@ -30,7 +30,9 @@ color: #333;}
 .top .top_icon i {
   font-size: 18px;
 }
-
+.top .top_icon li:first-child {
+  padding-left: 18px;
+}
 .top .top_icon li {
   width: 20%;
   text-align: center;
@@ -54,7 +56,7 @@ color: #333;}
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 200px;
+  width: 150px;
   height: 5px;
   background-color: #eee;
   border-radius: 30px;
@@ -95,7 +97,7 @@ color: #333;}
   text-align: center;
 }
 .bottom_bottom ul li:first-child {
-  margin-right: 30px;
+  margin-right: 20px;
 }
 
 .bottom_bottom ul li:last-child {
