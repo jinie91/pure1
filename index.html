@@ -90,6 +90,13 @@
         </div>
       </div>
     </div> 
+    <div class="bottom_top1">
+      <div class="top_btn">
+      </div>
+      <div class="btn_circle">
+        
+      </div>
+    </div> 
     <div class="bottom_bottom bottom1">
       <li><a href="./page/index3.html"><img src="./img/icon/1x/outline_insert_photo_black_24dp.png" alt=""></a>사진</li>
       <li><a href="#"><img src="./img/icon/1x/outline_auto_awesome_black_24dp.png" alt=""></a>데코</li>     
@@ -123,7 +130,6 @@
         </div>
         <div class="text">PURE 2</div>
       </li>
-      
       <li>
         <div class="pic pic3">
           <img src="../img/cloude.jfif" alt="">
@@ -149,114 +155,75 @@
         <div class="text">PURE 6</div>
       </li>
     </ul>
-
-      
-      
-      
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
   </div>
 
   <script src="./js/jquery-3.6.0.min.js"></script>
   <script src="js/jquery.typewriter.min.js"></script>
     
- <script>
+  <script>
 
-// $('.top_icon li').on('click', function(e){
-//         e.preventDefault();
-//         var i = $('.center .top_slide ul').index();
-//         $('.center .top_slide').eq(i).show().siblings().hide();
-
-
-//     })
-
-$('.top_icon li').on('click', function(e){
-    e.preventDefault();
-    var i = $(this).index();
-    $('.center .top_slide').css({display: 'block'})
-    $('.center .top_slide ul').eq(i-1).show().siblings().hide();
-})
-$('.top_icon li:first-child').on('click', function(e){
-    e.preventDefault();
-    $('.center .top_slide ul').hide();
-})
-$('.top_icon li:last-child').on('click', function(e){
-    e.preventDefault();
-    $('.center .top_slide ul').hide();
-    $('.center').css({
-      transform: 'rotateY(360deg)',
-      transition: '.3s'
+    $('.top_icon li').on('click', function(e){
+        e.preventDefault();
+        var i = $(this).index();
+        $('.center .top_slide').css({display: 'block'})
+        $('.center .top_slide ul').eq(i-1).show().siblings().hide();
     })
-})
-$('.center').on('click', function(e){
-    e.preventDefault();
-    var i = $(this).index();
-    $('.center .top_slide').css({display: 'none'})
-})
-$('.center .top_slide .slide3 .last-btn .filter').on('click', function(e){
-    e.preventDefault();
-    var i = $(this).index();
-    $('.bottom1').css({display: 'none'})
-    $('.bottom2').css({display: 'block'})
-})
-$('.bottom_top .top_btn div').on('click', function(e){
-    e.preventDefault();
-    $(this).addClass('on').siblings().removeClass('on');
-})
-$('.bottom1 li:last-child').on('click', function(e){
-    e.preventDefault();
-    $('.bottom1').css({display: 'none'})
-    $('.bottom2').css({display: 'block'})
-})
-$('.bottom2').on('click', function(e){
-    e.preventDefault();
-    $('.bottom1').css({display: 'flex'})
-    $('.bottom2').css({display: 'none'})
-
-})
-
-$('.circle_btn').click(function(){
-    $('.center').css({
-      backgroundColor: 'black',
-      backgroundSize: '100% 100%',
-      backgroundPosition: 'center'
-    });
-    $('.typing-txt').css({
-      display: 'block',
-      color: 'white'
-    });
-    $('.btn_in').css({
-      backgroundColor: '#333',
-      transition: '.5s'
+    $('.top_icon li:first-child').on('click', function(e){
+        e.preventDefault();
+        $('.center .top_slide ul').hide();
     })
-  });
-  $('.typing-txt').typeWrite({
-    repeat:true,
-    interval: 1000,
-    cursor:false,
-});
-
-
+    $('.top_icon li:last-child').on('click', function(e){
+        e.preventDefault();
+        $('.center .top_slide ul').hide();
+        $('.center').css({
+          transform: 'rotateY(360deg)',
+          transition: '.3s'
+        })
+    })
+    $('.center').on('click', function(e){
+        e.preventDefault();
+        var i = $(this).index();
+        $('.center .top_slide').css({display: 'none'})
+    })
+    $('.center .top_slide .slide3 .last-btn .filter').on('click', function(e){
+        e.preventDefault();
+        $('.bottom1').css({display: 'none'})
+        $('.bottom2').css({display: 'block'})
+    })
+    $('.bottom_top .top_btn div').on('click', function(e){
+        e.preventDefault();
+        $(this).addClass('on').siblings().removeClass('on');
+    })
+    $('.bottom1 li:last-child').on('click', function(e){
+        e.preventDefault();
+        $('.bottom1').css({display: 'none'})
+        $('.bottom2').css({display: 'block'})
+    })
+    $('.bottom2').on('click', function(e){
+        e.preventDefault();
+        $('.bottom1').css({display: 'flex'})
+        $('.bottom2').css({display: 'none'})
+    })
+    $('.circle_btn').click(function(){
+        $('.center').css({
+          backgroundColor: 'black',
+          backgroundSize: '100% 100%',
+          backgroundPosition: 'center'
+        });
+        $('.typing-txt').css({
+          display: 'block',
+          color: 'white'
+        });
+        $('.btn_in').css({
+          backgroundColor: '#333',
+          transition: '.5s'
+        })
+      });
+      $('.typing-txt').typeWrite({
+        repeat:true,
+        interval: 1000,
+        cursor:false,
+    });
 
   </script>
   
