@@ -123,6 +123,8 @@ color: #333;}
 .bottom_bottom .pic {
   border-radius: 5px;
   overflow: hidden;
+  border: 2px solid transparent;
+  box-sizing: border-box;
 }
 .bottom_bottom .pic:hover {
   border: 2px solid #000;
