@@ -52,8 +52,8 @@ color: #333;}
 .center .inner div {
   width: 32%;
   height: 100px;
-  background-color: white;
-  margin: 8px 0;
+  /* background-color: white; */
+  margin: 7px 0;
 }
 .center .inner div img {
   width: 100%;
