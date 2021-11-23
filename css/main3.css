@@ -1,0 +1,65 @@
+* {margin: 0; padding: 0;}
+ul {list-style: none;}
+li {list-style: none;}
+a {display: block; text-decoration: none;
+color: #333;}
+
+#wrap {
+  width: 100%;
+  height: 100vh;
+  min-width: 320px;
+  max-width: 460px;
+  overflow: hidden;
+  margin: 0 auto;
+  background-color: #fff;
+}
+.top {
+  width: 100%;
+  padding: 30px 0 15px 0;
+  box-sizing: border-box;
+  /* background-image: url(../img/sense.jpg); */
+}
+.top .top_icon {
+  /* width: calc(100% - 20px); */
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top .top_icon i {
+  font-size: 18px;
+}
+
+.top .top_icon li {
+  width: 20%;
+  text-align: center;
+}
+.center {
+  width: 100%;
+  height: 100%;
+  background-color: #eee;
+}
+.center .inner {
+  width: calc(100% - 10px);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 5px;
+  box-sizing: border-box;
+}
+.center .inner div {
+  width: 32%;
+  height: 100px;
+  background-color: white;
+  margin: 7px 0;
+}
+.center .inner div img {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+
