@@ -86,9 +86,9 @@ color: #333;}
   height: 22px;
   border: 1px solid #333;
   border-radius: 5px;
-  /* box-sizing: border-box; */
+  box-sizing: border-box;
   /* padding: 2px; */
-  line-height: 20px;
+  line-height: 22px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -153,9 +153,7 @@ color: #333;}
   font-size: 12px;
   font-weight: bold;
   border: 1px solid #333;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  line-height: 20px;
 }
 .center .top_slide .slide3 .last-btn a:hover {
   background-color: #333;
