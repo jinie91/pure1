@@ -80,11 +80,16 @@
       </ul>
 
       <ul class="share">
-        <li><a href="#"><img src="../img/sns/kakao-talk.png" alt=""></a>카카오톡</li>
-        <li><a href="#"><img src="../img/sns/instagram.png" alt=""></a>인스타그램</li>
-        <li><a href="#"><img src="../img/sns/facebook.png" alt=""></a>페이스북</li>
-        <!-- <li><a href="#"><img src="../img/sns/twitter.png" alt=""></a>트위터</li>
-        <li><a href="#"><img src="../img/sns/telegram.png" alt="">텔레그램</a></li> -->
+        <div class="share_top">
+          <li><a href="#"><img src="../img/sns/kakao-talk.png" alt="">Kakaotalk</a></li>
+          <li><a href="#"><img src="../img/sns/instagram.png" alt="">Instagram</a></li>
+          <li><a href="#"><img src="../img/sns/facebook.png" alt="">Facebook</a></li>
+          <li><a href="#"><img src="../img/sns/twitter.png" alt="">Twitter</a></li>
+          <li><a href="#"><img src="../img/sns/telegram.png" alt="">Telegram</a></li>
+        </div>
+        <div class="share_bottom">
+          <li><a href="#"><img src="../img/icon/1x/outline_expand_more_black_24dp.png" alt=""></a></li>
+        </div>
       </ul>
 
 
@@ -123,9 +128,9 @@
   $('.bottom_icon li:last-child').on('click', function(e){
     e.preventDefault();
     $('.bottom_bottom .share').css({
-      display: 'flex',
-      position: 'relative',
-      paddingTop: '23px'
+      display: 'block',
+      // position: 'relative',
+      // paddingTop: '50px 10px 20px 10px'
     })
     $('.picture').css({
       display: 'none'
@@ -133,7 +138,35 @@
     $('.bottom_top').css({
       display: 'none'
     })
+    $(' .bottom_icon li').css({
+      display: 'none'
+    })
 })
+
+
+
+
+  $('.share_bottom li').on('click', function(e){
+    e.preventDefault();
+    $('.bottom_bottom .share').css({
+      display: 'none',
+      // position: 'relative',
+      // paddingTop: '50px 10px 20px 10px'
+    })
+    $('.picture').css({
+      display: 'flex'
+    })
+    $('.bottom_top').css({
+      display: 'block'
+    })
+    $(' .bottom_icon li').css({
+      display: 'block'
+    })
+})
+
+
+
+  
 
 
 
