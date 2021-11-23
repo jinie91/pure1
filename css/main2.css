@@ -154,6 +154,10 @@ color: #333;}
   /* margin: 10px 0; */
   /* box-sizing: border-box; */
 }
+.bottom_bottom .share_top li a {
+  font-size: 12px;
+}
+
 .bottom_bottom .share_top li img {
   width: 80%;
 }
