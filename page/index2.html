@@ -81,10 +81,10 @@
 
       <ul class="share">
         <li><a href="#"><img src="../img/sns/kakao-talk.png" alt=""></a>카카오톡</li>
-        <li><a href="#"><img src="../img/sns/instagram.png" alt=""></a>인스타</li>
+        <li><a href="#"><img src="../img/sns/instagram.png" alt=""></a>인스타그램</li>
         <li><a href="#"><img src="../img/sns/facebook.png" alt=""></a>페이스북</li>
-        <li><a href="#"><img src="../img/sns/twitter.png" alt=""></a>트위터</li>
-        <li><a href="#"><img src="../img/sns/telegram.png" alt="">텔레그램</a></li>
+        <!-- <li><a href="#"><img src="../img/sns/twitter.png" alt=""></a>트위터</li>
+        <li><a href="#"><img src="../img/sns/telegram.png" alt="">텔레그램</a></li> -->
       </ul>
 
 
@@ -123,7 +123,9 @@
   $('.bottom_icon li:last-child').on('click', function(e){
     e.preventDefault();
     $('.bottom_bottom .share').css({
-      display: 'flex'
+      display: 'flex',
+      position: 'relative',
+      paddingTop: '23px'
     })
     $('.picture').css({
       display: 'none'
