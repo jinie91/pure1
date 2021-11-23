@@ -47,8 +47,8 @@
             <div class="dust-in">
               <div class="icon"><i class="far fa-smile"></i></div>
               <div class="icon_text">
-                <p>양호</p>
-                <p>37㎍/m³</p>  
+                <p>좋음</p>
+                <p>22㎍/m³</p>  
               </div>
             </div>  
           </li>
@@ -57,8 +57,8 @@
             <div class="dust-in">
               <div class="icon"><i class="far fa-smile"></i></div>
               <div class="icon_text">
-                <p>보통</p>
-                <p>22㎍/m³</p>  
+                <p>좋음</p>
+                <p>13㎍/m³</p>  
               </div>
             </div>
           </li>
@@ -156,6 +156,10 @@ $('.top_icon li:first-child').on('click', function(e){
 $('.top_icon li:last-child').on('click', function(e){
     e.preventDefault();
     $('.center .top_slide ul').hide();
+    $('.center').css({
+      transform: 'rotateY(360deg)',
+      transition: '.3s'
+    })
 })
 $('.center').on('click', function(e){
     e.preventDefault();

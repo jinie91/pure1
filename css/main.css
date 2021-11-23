@@ -55,18 +55,20 @@ color: #333;}
   border-radius: 5px;
 }
 .center .top_slide .slide1 {
-  height: 85px;
+  /* height: 80px; */
+  padding: 10px 0;
   background-color: #fff;
   
 }
 .center .top_slide .slide1 li {
   width: 100%;
   text-align: center;
-  line-height: 25px;
-  font-size: 14px;
+  line-height: 20px;
+  font-size: 12px;
 }
 .center .top_slide .slide2 {
-  height: 55px;
+  /* height: 55px; */
+  padding: 10px 0;
   background-color: #fff;
 }
 .center .top_slide .slide2 li {
@@ -75,35 +77,37 @@ color: #333;}
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   /* line-height:  14px; */
 }
 .center .top_slide .slide2 li a {
   width: 50%;
-  height: 25px;
+  height: 22px;
   border: 1px solid #333;
   border-radius: 5px;
-  box-sizing: border-box;
-  padding: 2px;
-  line-height: 18px;
+  /* box-sizing: border-box; */
+  /* padding: 2px; */
+  line-height: 20px;
 }
 .center .top_slide .slide2 li a:hover {
   background-color: #333;
   color: #fff;
 }
 .center .top_slide .slide3 {
-  height: 88px;
+  padding: 2px 0;
+
+  /* height: 88px; */
   background-color: #fff;
 }
 .center .top_slide .slide3 li {
   width: 100%;
   text-align: center;
-  font-size: 14px;
+  font-size: 12px;
   border-right: 1px solid #333;
 }
 .center .top_slide .slide3 li:first-child {
-  width: 120%;  
+  width: 110%;  
 }
 .center .top_slide .slide3 li:last-child {
   border-right: 0;
@@ -112,7 +116,7 @@ color: #333;}
   font-weight: bold;
 }
 .center .top_slide .slide3 .left_text p:last-child {
-  padding-top: 5px;
+  padding-top: 2px;
 }
 .center .top_slide .slide3 .dust>p {
   font-weight: bold;
@@ -121,13 +125,13 @@ color: #333;}
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10px;
+  padding-top: 5px;
 }
 .center .top_slide .slide3 .dust-in .icon {
   font-size: 22px;
 }
 .center .top_slide .slide3 .dust-in .icon_text {
-  font-size: 12px;
+  font-size: 11px;
   text-align: left;
   padding-left: 10px;
 }
@@ -141,13 +145,12 @@ color: #333;}
   height: 20px;
   /* background-color: #fff;   */
   margin: 8px auto;
-  padding: 2px;
+  padding: 1px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 12px;
   font-weight: bold;
   border: 1px solid #333;
   line-height: 20px;
-
 }
 .center .top_slide .slide3 .last-btn a:hover {
   background-color: #333;
