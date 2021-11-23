@@ -33,65 +33,62 @@
     </div> 
     <div class="bottom_bottom">
       
-      <ul>
+      <ul class="picture">
         <li>
-          <div>
-            <div class="pic pic0">
-              <!-- <img src="../img/cloude.jfif" alt=""> -->
-            </div>
-            <div class="text">PURE</div>
+          <div class="pic pic0">
+            <!-- <img src="../img/cloude.jfif" alt=""> -->
           </div>
+          <div class="text">PURE</div>
         </li>
         <li>
-          <div>
-            <div class="pic pic1">
-              <img src="../img/cloude.jfif" alt="">
-            </div>
-            <div class="text">PURE 1</div>
+          <div class="pic pic1">
+            <img src="../img/cloude.jfif" alt="">
           </div>
+          <div class="text">PURE 1</div>
         </li>
         <li>
-          <div>
-            <div class="pic pic2">
-              <img src="../img/cloude.jfif" alt="">
-            </div>
-            <div class="text">PURE 2</div>
+          <div class="pic pic2">
+            <img src="../img/cloude.jfif" alt="">
           </div>
+          <div class="text">PURE 2</div>
         </li>
         
         <li>
-          <div>
-            <div class="pic pic3">
-              <img src="../img/cloude.jfif" alt="">
-            </div>
-            <div class="text">PURE 3</div>
+          <div class="pic pic3">
+            <img src="../img/cloude.jfif" alt="">
           </div>
+          <div class="text">PURE 3</div>
         </li>
         <li>
-          <div>
-            <div class="pic pic4">
-              <img src="../img/cloude.jfif" alt="">
-            </div>
-            <div class="text">PURE 4</div>
+          <div class="pic pic4">
+            <img src="../img/cloude.jfif" alt="">
           </div>
+          <div class="text">PURE 4</div>
         </li>  
         <li>
-          <div>
-            <div class="pic pic5">
-              <img src="../img/cloude.jfif" alt="">
-            </div>
-            <div class="text">PURE 5</div>
+          <div class="pic pic5 on">
+            <img src="../img/cloude.jfif" alt="">
           </div>
+          <div class="text">PURE 5</div>
         </li>
         <li>
-          <div>
-            <div class="pic pic6">
-              <img src="../img/cloude.jfif" alt="">
-            </div>
-            <div class="text">PURE 6</div>
+          <div class="pic pic6">
+            <img src="../img/cloude.jfif" alt="">
           </div>
+          <div class="text">PURE 6</div>
         </li>
       </ul>
+
+      <ul class="share">
+        <li><a href="#"><img src="../img/sns/kakao-talk.png" alt=""></a>카카오톡</li>
+        <li><a href="#"><img src="../img/sns/instagram.png" alt=""></a>인스타</li>
+        <li><a href="#"><img src="../img/sns/facebook.png" alt=""></a>페이스북</li>
+        <li><a href="#"><img src="../img/sns/twitter.png" alt=""></a>트위터</li>
+        <li><a href="#"><img src="../img/sns/telegram.png" alt="">텔레그램</a></li>
+      </ul>
+
+
+
   </div>
 
 
@@ -107,15 +104,34 @@
 
   </div>
 
-  <script src="./js/jquery-3.6.0.min.js"></script>
+  <script src="../js/jquery-3.6.0.min.js"></script>
   <script>
 
-  // $('.bottom_icon .cancel').click(function(){
-  //   $('.center').css({
-  //     backgroundColor: '#eee'
-  //   })
+  // $('.bottom_bottom ul li').on('click', function(e){
+  //     e.preventDefault();
+  //     var i = $('.bottom_bottom ul li div').index();
+  //     $(this).eq(i).addClass('on').siblings().removeClass('on');
   // })
 
+
+
+
+  $('.bottom_bottom ul li div').on('click', function(e){
+      e.preventDefault();
+      $(this).addClass('on').siblings().removeClass('on');
+  })
+  $('.bottom_icon li:last-child').on('click', function(e){
+    e.preventDefault();
+    $('.bottom_bottom .share').css({
+      display: 'flex'
+    })
+    $('.picture').css({
+      display: 'none'
+    })
+    $('.bottom_top').css({
+      display: 'none'
+    })
+})
 
 
 
