@@ -89,6 +89,9 @@ color: #333;}
   /* box-sizing: border-box; */
   /* padding: 2px; */
   line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .center .top_slide .slide2 li a:hover {
   background-color: #333;
@@ -150,7 +153,9 @@ color: #333;}
   font-size: 12px;
   font-weight: bold;
   border: 1px solid #333;
-  line-height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .center .top_slide .slide3 .last-btn a:hover {
   background-color: #333;
